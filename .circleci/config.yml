@@ -26,7 +26,7 @@ jobs:
           name: Change directory
           command: |
             echo $PWD 
-            cd mongodb-boshrelease/src/mongodb-open-service-broker
+            cd src/mongodb-open-service-broker
 
       - run:
           name: Build
