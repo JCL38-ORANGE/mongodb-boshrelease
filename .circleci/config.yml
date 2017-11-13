@@ -20,13 +20,12 @@ jobs:
       MAVEN_OPTS: -Xmx3200m
     
     steps:
-      - checkout
+#      - checkout
 
-#      - run:
-#          name: Change directory
-#          command: |
-#            echo $PWD 
-#            cd $CIRCLE_WORKING_DIRECTORY/mongodb-boshrelease/src/mongodb-open-service-broker
+
+      - run:
+          name: Clone
+          command: git clone https://github.com/JCL38-ORANGE/mongodb-boshrelease.git 
 
       - run:
           name: Build
