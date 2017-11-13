@@ -30,5 +30,6 @@ jobs:
 
       - run:
           name: Build
+          working_directory: ~/myapp/mongodb-boshrelease/src/mongodb-open-service-broker
           command: mvn clean install
 
