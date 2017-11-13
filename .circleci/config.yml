@@ -13,7 +13,7 @@ jobs:
       # documented at https://circleci.com/docs/2.0/circleci-images/
       # - image: circleci/postgres:9.4
 
-    working_directory: ~/mongodb-boshrelease/mongodb-boshrelease/src/mongodb-open-service-broker
+    working_directory: ~/myapp
 
     environment:
       # Customize the JVM maximum heap limit
@@ -26,7 +26,7 @@ jobs:
           name: Change directory
           command: |
             echo $PWD 
-            cd src/mongodb-open-service-broker
+            cd mongodb-boshrelease/src/mongodb-open-service-broker
 
       - run:
           name: Build
